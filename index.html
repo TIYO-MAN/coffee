@@ -4,24 +4,84 @@
   <meta charset="UTF-8">
   <title>Coffee Company</title>
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Sign-in script -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <header>
-    <h1>Welcome to Coffee Company</h1>
     <nav>
-      <a href="#shop">Shop</a>
-      <a href="#map">Find Us</a>
-      <a href="#webinars">Webinars</a>
-      <a href="#resources">Books & Resources</a>
+      <div class="logo">Coffee Company</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="g_id_onload"
+           data-client_id="YOUR_GOOGLE_CLIENT_ID"
+           data-context="signup"
+           data-ux_mode="popup"
+           data-callback="onGoogleSignIn"></div>
+      <div class="google-sign-in" id="google-sign-in"></div>
     </nav>
   </header>
-  <section>
-    <p>Get the best coffee, mugs, spoons, and more!</p>
-    <form id="newsletter-form">
-      <input type="email" placeholder="Subscribe to News" required>
-      <button type="submit">Subscribe</button>
-    </form>
+
+  <!-- Home Section (Hope) -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Welcome to Coffee Company</h1>
+      <p>Your destination for finest coffee, mugs, spoons, and sustainable solutions.</p>
+      <button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'});">
+        Start Shopping
+      </button>
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>Our Story</h2>
+    <p>We bring you the finest coffee, mugs, spoons, and more from the heart of our farms. Sustainability and quality are at our core.</p>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="product-grid">
+    <h2>Shop Products</h2>
+    <div class="products">
+      <div class="product" onclick="showOptions('coffee')">
+        <img src="img/coffee-bag.jpg" alt="Coffee Bag">
+        <h3>Coffee Beans</h3>
+        <p>Freshly roasted Arabica beans.</p>
+        <button>Customize & Buy</button>
+      </div>
+      <div class="product" onclick="showOptions('mug')">
+        <img src="img/mug.jpg" alt="Coffee Mug">
+        <h3>Coffee Mug</h3>
+        <p>Stylish ceramic mug for your coffee moments.</p>
+        <button>Customize & Buy</button>
+      </div>
+      <div class="product" onclick="showOptions('spoon')">
+        <img src="img/spoon.jpg" alt="Coffee Spoon">
+        <h3>Coffee Spoon</h3>
+        <p>Precision spoon for the perfect brew.</p>
+        <button>Customize & Buy</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal for options -->
+  <div id="option-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <form id="options-form">
+        <div id="option-fields"></div>
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
