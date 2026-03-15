@@ -20,6 +20,10 @@ header nav {
   letter-spacing: 2px;
  
 }
+.nav { position: sticky; /* It scrolls, then sticks */ 
+     top: 0; /* The point where it should stop and stick */ 
+     z-index: 1000; 
+}
 
 nav ul {
   display: flex;
