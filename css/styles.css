@@ -85,6 +85,76 @@ nav ul li a:hover {
   margin: 2em auto;
   max-width: 700px;
 }
+.hero {
+  background: url('coffee-hero.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.5s ease;
+}
+.hero-content h1 { font-size: 3em; color: #d4a373; }
+.hero-content button {
+  margin-top: 1em;
+  background: #d4a373;
+  color: #231710;
+  border: none;
+  padding: 0.75em 2em;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero-content button:hover { background: #b68949; }
+
+/* Sections */
+section { padding: 4em 2em; text-align: center; }
+.story img, .about img {
+  margin-top: 2em;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  animation: zoomIn 1.5s ease;
+}
+.products { background: #231710; }
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.product {
+  background: #36261e;
+  border-radius: 10px;
+  padding: 1.5em;
+  width: 250px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease;
+}
+.product img { width: 100%; border-radius: 8px; }
+.product h3 { color: #d4a373; }
+.quality ul { list-style:none; padding:0; }
+.quality li { margin:1em 0; }
+.testimonials blockquote {
+  margin: 1em auto;
+  max-width: 600px;
+  font-style: italic;
+  color: #d4a373;
+}
 
 /* Shop Grid Horizontal */
 .product-grid {
