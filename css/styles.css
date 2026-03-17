@@ -27,6 +27,7 @@ header nav {
 /* Right-side fixed navigation */
 .sidebar {
   position: fixed;
+  align-items: right;
   top: 0;
   right: 0;
   width: 200px;        /* adjust width as needed */
