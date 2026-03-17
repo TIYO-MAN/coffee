@@ -66,29 +66,42 @@ header nav {
 }
 
 
-.sidebar ul {
+/* Fixed top-right navigation bar */
+.topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;              /* spans full width */
+  background: #231710;      /* coffee-inspired dark tone */
+  padding: 1em 2em;
+  z-index: 1000;
+}
+
+.topnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end; /* pushes links to the right */
+  gap: 2em;
 }
 
-.sidebar ul li {
-  margin: 20px 0;
-}
-
-.sidebar ul li a {
+.topnav ul li a {
   color: #f8f4f0;
   text-decoration: none;
   font-weight: 500;
-  display: block;
-  padding: 10px;
-  transition: background 0.3s;
+  transition: color 0.3s;
 }
 
-.sidebar ul li a:hover {
-  background-color: #444;
-  border-radius: 4px;
+.topnav ul li a:hover {
+  color: #d4a373;
 }
+
+/* Push page content down so it’s not hidden under nav */
+body {
+  padding-top: 70px; /* adjust to match nav height */
+}
+
 
 /* Push page content away from sidebar */
 body {
