@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .about {
-  background: #231710;
+  background: url('coffee%20imge/photo_2026-03-15_18-04-55.jpg') center/cover no-repeat;
   padding: 2em;
   border-radius: 16px;
   margin: 2em auto;
