@@ -9,19 +9,31 @@
 <head>
   <meta charset="UTF-8">
 
- <div class="logo">
-  <img src="coffee%20imge/photo_2026-03-15_18-00-04.jpg" alt="Nione"  style="height:80px;" >
-</div>
+
   <link rel="stylesheet" href="css/styles.css">
   <header>
   <nav class="topnav">
-    <ul>
-      <li><a href="#index">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#blog">News</a></li>
-      <li><a href="#contact">Contact</a></li>
+     <div class="logo">
+  <img src="coffee%20imge/photo_2026-03-15_18-00-04.jpg" alt="Nione"  style="height:80px;" >
+</div>
+  <header>
+  <nav style="position:fixed; top:0; right:0; width:100%; background:#231710; padding:1em 2em; z-index:1000;">
+    <ul style="list-style:none; margin:0; padding:0; display:flex; justify-content:flex-end; gap:2em;">
+      <li><a href="#index" style="color:#f8f4f0; text-decoration:none; font-weight:500;">Home</a></li>
+      <li><a href="#about" style="color:#f8f4f0; text-decoration:none; font-weight:500;">About</a></li>
+      <li><a href="#shop" style="color:#f8f4f0; text-decoration:none; font-weight:500;">Shop</a></li>
+      <li><a href="#blog" style="color:#f8f4f0; text-decoration:none; font-weight:500;">News</a></li>
+      <li><a href="#contact" style="color:#f8f4f0; text-decoration:none; font-weight:500;">Contact</a></li>
     </ul>
+  </nav>
+</header>
+
+<!-- Push content down so it's not hidden under nav -->
+<div style="padding-top:70px;">
+  <h1>Welcome to Coffee Startup</h1>
+  <p>Brewing passion, one cup at a time.</p>
+</div>
+
   </nav>
 </header>
 
