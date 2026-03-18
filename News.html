@@ -35,11 +35,33 @@
     </nav>
   </header>
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee News | Coffee Startup</title>
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="topnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!-- Hero Banner -->
   <section class="news-hero">
     <div class="hero-content">
-      <h1>Coffee News & Insights</h1>
-      <p>Stay updated with our latest stories and the global coffee market.</p>
+      <h1>Coffee News & Market</h1>
+      <p>Stay updated with our latest stories and Arabica coffee prices.</p>
     </div>
   </section>
 
@@ -52,32 +74,31 @@
       <a href="#">Read More</a>
     </article>
     <article>
-      <h3>New Ceramic Mugs Collection</h3>
-      <p>We’ve launched handcrafted mugs designed to elevate your coffee experience...</p>
-      <a href="#">Read More</a>
-    </article>
-    <article>
       <h3>Sustainability in Coffee Production</h3>
       <p>Learn how we are reducing waste and supporting eco-friendly practices...</p>
       <a href="#">Read More</a>
     </article>
   </section>
 
-  <!-- Live Market Chart -->
+  <!-- Live Candlestick Chart -->
   <section class="market">
-    <h2>Arabica Coffee Price (USD)</h2>
-    <!-- TradingView Widget -->
+    <h2>Arabica Coffee Futures (USD)</h2>
     <div class="tradingview-widget-container">
       <div id="tradingview_chart"></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js">
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js">
       {
-        "interval": "1D",
-        "width": "100%",
-        "height": "500",
+        "autosize": true,
         "symbol": "ICEUS:KC1!",
-        "showIntervalTabs": true,
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",   /* 1 = candlesticks */
         "locale": "en",
-        "colorTheme": "dark"
+        "toolbar_bg": "#231710",
+        "enable_publishing": false,
+        "hide_top_toolbar": false,
+        "save_image": false,
+        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"]
       }
       </script>
     </div>
