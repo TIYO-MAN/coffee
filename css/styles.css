@@ -485,8 +485,8 @@ body { padding-top: 70px; }
   max-width: 100%;
 }
 .tradingview-widget-container iframe {
-  height: 100% !important; /* force iframe to match container height */
-  width: 100% !important;
+  height: 100%; 
+  width: 100% t;
 }
 
 /* Footer */
