@@ -481,7 +481,7 @@ body { padding-top: 70px; }
 
 /* Make TradingView chart taller */
 .tradingview-widget-container {
-  height: 3500px;   /* triple the original 500px */
+  height: 35000px;   /* triple the original 500px */
   max-width: 100%;
 }
 .tradingview-widget-container iframe {
