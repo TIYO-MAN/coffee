@@ -99,11 +99,28 @@
   <section class="map">
     <h2>Our Location</h2>
     <iframe 
-    type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"  
+
+      <div id="tradingview-widget-container iframe">
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"  
      
       style="border:0;" 
       allowfullscreen="" 
-      loading="lazy"
+      loading="lazy">
+      {
+        
+        "autosize": false,
+        "symbol": "KC1!",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "0",   /* 1 = candlesticks */
+        "locale": "en",
+        "toolbar_bg": "#231710",
+        "enable_publishing": false,
+        "hide_top_toolbar": true,
+        "save_image": false,
+        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"]
+      };     
       
         
 
