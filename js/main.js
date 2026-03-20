@@ -76,3 +76,12 @@ document.getElementById('options-form').addEventListener('submit', function(e) {
   closeModal();
   alert('Item added to cart!');
 });
+const ctx = document.getElementById('coffeeChart').getContext('2d');
+const coffeeChart = new Chart(ctx, {
+    type: 'line',
+    data: { /* your data */ },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false // allows custom height
+    }
+});
