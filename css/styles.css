@@ -8,27 +8,26 @@ body {
 }
 
 /* Navigation bar */
+/* Navigation bar (top right, not fixed) */
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
-  background: #231710; /* dark brown background */
+  background: #231710;   /* dark background */
   padding: 1em 2em;
-  z-index: 1000;
   display: flex;
-  justify-content: space-between; /* logo left, links right */
+  justify-content: flex-end; /* push items to the right */
   align-items: center;
 }
 
-/* Logo */
+/* Logo (optional, if you want it left) */
 .navbar .logo {
+  margin-right: auto;    /* keeps logo on the left */
   font-size: 1.7em;
   font-weight: bold;
-  color: #d4a373; /* golden accent */
+  color: #d4a373;
   letter-spacing: 2px;
 }
 
-/* Menu */
+/* Menu items */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -45,8 +44,9 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #d4a373; /* hover accent */
+  color: #d4a373;
 }
+
 
 /* Hero sections */
 .hero, .about-hero, .shop-hero, .news-hero, .contact-hero {
