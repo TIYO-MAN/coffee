@@ -11,7 +11,7 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  width: 75%;
+  width: 95%;
   background: #231710; /* dark brown background */
   padding: 1em 2em;
   z-index: 1000;
