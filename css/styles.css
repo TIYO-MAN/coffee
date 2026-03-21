@@ -14,7 +14,7 @@ body {
   top: 0;
   width: 100%;
   background: #231710; /* dark brown background */
-  padding: 1em 1em;
+  padding: 1em 3em;
   z-index: 1000;
   display: flex;
   justify-content: space-between; /* logo left, links right */
