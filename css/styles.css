@@ -492,9 +492,9 @@ body { padding-top: 70px; }
         "enable_publishing": false,
         "hide_top_toolbar": true,
         "save_image": false,
-        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"]
-  padding: 3em 2em;
-  text-align: center;
+        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"];
+         padding: 3em 2em;
+        text-align: center;
 }
 .tradingview-widget-container iframe {
           "autosize": false,
@@ -508,7 +508,7 @@ body { padding-top: 70px; }
         "enable_publishing": false,
         "hide_top_toolbar": true,
         "save_image": false,
-        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"] 
+        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"] ;
   padding: 3em 2em;
   text-align: center;
 }
