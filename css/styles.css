@@ -481,34 +481,11 @@ body { padding-top: 70px; }
 
 /* Make TradingView chart taller */
 .tradingview-widget-container {
-          "autosize": false,
-        "symbol": "KC1!",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
-        "style": "2",   /* 1 = candlesticks */
-        "locale": "en",
-        "toolbar_bg": "#231710",
-        "enable_publishing": false,
-        "hide_top_toolbar": true,
-        "save_image": false,
-        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"];
          padding: 3em 2em;
         text-align: center;
 }
 .tradingview-widget-container iframe {
-          "autosize": false,
-        "symbol": "KC1!",
-        "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
-        "style": "2",   /* 1 = candlesticks */
-        "locale": "en",
-        "toolbar_bg": "#231710",
-        "enable_publishing": false,
-        "hide_top_toolbar": true,
-        "save_image": false,
-        "studies": ["MACD@tv-basicstudies","RSI@tv-basicstudies"] ;
+       
   padding: 3em 2em;
   text-align: center;
 }
