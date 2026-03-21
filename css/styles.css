@@ -14,7 +14,7 @@ body {
   top: 0;
   width: 100%;
   background: #231710; /* dark brown background */
-  padding: 1em 2em;
+  padding: 1em 1em;
  padding-right: 1em; 
   z-index: 1000;
   display: flex;
@@ -24,10 +24,10 @@ body {
 
 /* Logo */
 .navbar .logo {
-  font-size: 1.7em;
+  font-size: 1em;
   font-weight: bold;
   color: #d4a373; /* golden accent */
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* Menu */
