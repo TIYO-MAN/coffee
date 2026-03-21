@@ -10,7 +10,7 @@ body {
 /* Navigation bar */
 /* Navigation bar (top right, not fixed) */
 .navbar {
-  width: 1000px;
+  width: 1200px;
   background: #231710;   /* dark background */
   padding: 1em 2em;
   display: flex;
