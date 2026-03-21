@@ -5,7 +5,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #1a1410;
   color: #f8f4f0;
-  padding-top: 70px; /* prevents overlap with fixed nav */
+  padding-top: 50px; /* prevents overlap with fixed nav */
 }
 
 /* Navigation bar */
