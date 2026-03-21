@@ -55,6 +55,17 @@ nav ul li a:hover {
   min-height: 50vh;
   padding: 3em 0;
 }
+.hero-section {
+  background-image: url('images/coffee-harvest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
 .home-content {
   text-align: center;
   background: rgba(30,20,16,0.90);
