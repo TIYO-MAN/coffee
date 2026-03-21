@@ -54,17 +54,7 @@ nav ul li a:hover {
   justify-content: center;
   min-height: 50vh;
   padding: 3em 0;
-}
-.hero-section {
-  background-image: url('coffee%20imge/0260321_161617.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 20px;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
+
 
 .home-content {
   text-align: center;
