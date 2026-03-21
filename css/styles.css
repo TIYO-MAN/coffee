@@ -16,7 +16,7 @@ body {
   background: #231710; /* dark brown background */
   padding: 1em 1em;
  padding-right: 1em; 
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   justify-content: 500px
   align-items: center;
