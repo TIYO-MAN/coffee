@@ -34,8 +34,8 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 2em;
- margin-right: 1em; 
+  gap: 1em;
+ 
 
   padding: 0;
 }
