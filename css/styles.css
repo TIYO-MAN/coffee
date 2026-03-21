@@ -17,7 +17,7 @@ body {
   padding: 1em 2em;
   z-index: 1000;
   display: flex;
-  
+  justify-content: space-between; /* logo left, links right */
   align-items: center;
 }
 
