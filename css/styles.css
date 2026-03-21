@@ -59,6 +59,7 @@ nav ul li a:hover {
 .home-content {
   text-align: center;
   padding: 2em;
+   background: #231710;
   border-radius: 12px;
 }
 .home-content h1 {
