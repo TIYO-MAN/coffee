@@ -124,7 +124,7 @@ h1, h2, h3 { color: #d4a373; }
   font-weight: bold;
   cursor: pointer;
 }
-.product button:hover { background: #b68949; }
+.product button:hover { background: #d4a373; }
 
 /* Modal */
 .modal {
