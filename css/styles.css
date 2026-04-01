@@ -1,5 +1,4 @@
-/* Base  */
-/* Base reset */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -14,7 +13,7 @@ body {
   top: 0;
   width: 100%;
   background: #231710; /* dark brown background */
-  padding: 1em 2em;
+  padding: 2em 4em;
 
   z-index: 100;
   display: flex;
@@ -24,19 +23,19 @@ body {
 
 /* Logo */
 .navbar .logo {
-  font-size: 1em;
+  font-size: 2em;
   font-weight: bold;
   color: #d4a373; /* golden accent */
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 /* Menu */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
 
-  padding: 0;
+  padding: 1em;
 }
 
 .navbar ul li a {
