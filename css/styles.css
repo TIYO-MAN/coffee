@@ -63,10 +63,11 @@ body {
 }
 .hero-content h1 {
   font-size: 2.5em;
-  color: #D61111;
+  color: #d4a373;
 }
 .hero-content button {
- margin-top: 1em;
+ 
+  margin-top: 1em;
   background: #36261e;
   color: #d4a373;
   border: none;
@@ -75,7 +76,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-.hero-content button:hover { background: #d4a373; }
+.product button:hover { background: #d4a373; }
 
 /* Sections */
 section { padding: 4em 2em; text-align: center; }
