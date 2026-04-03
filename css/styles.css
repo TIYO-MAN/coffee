@@ -52,14 +52,13 @@ body {
 
 /* Hero sections */
 .hero, .about-hero, .shop-hero, .news-hero, .contact-hero {
-  min-height: 50vh;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  background-size: cover;
-  background-position: center;
+
 }
 .hero::after, .about-hero::after, .shop-hero::after, 
 .news-hero::after, .contact-hero::after {
