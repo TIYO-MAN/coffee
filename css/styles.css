@@ -78,11 +78,11 @@ body {
   color: #d4a373;
 }
 .hero-content button {
-  margin-top: 1em;
+  margin-top: 0.5em;
   background: #d4a373;
   color: #231710;
   border: none;
-  padding: 0.5em 1em;
+  padding: 0.1em 0.5em;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
@@ -103,11 +103,11 @@ h1, h2, h3 { color: #d4a373; }
 }
 .product {
   background: #36261e;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 1.5em;
-  width: 240px;
+  width: 50px;
   text-align: center;
-  animation: fadeInUp 1.5s ease;
+  animation: fadeInUp 0.75s ease;
 }
 .product img {
   width: 100%;
@@ -119,7 +119,7 @@ h1, h2, h3 { color: #d4a373; }
   background: #36261e;
   color: #d4a373;
   border: none;
-  padding: 0.5em 1.2em;
+  padding: 0.1em 0.4em;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
