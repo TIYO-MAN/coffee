@@ -62,10 +62,7 @@ body {
 }
 .hero::after, .about-hero::after, .shop-hero::after, 
 .news-hero::after, .contact-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
+  
 }
 .hero-content {
    background: #36261e;
@@ -73,7 +70,7 @@ body {
   padding: 2em;
   width: 100%;
   text-align: center;
-  animation: fadeInUp 0.75s ease;
+  animation: 0.75s ;
 }
 .hero-content h1 {
   font-size: 2.5em;
