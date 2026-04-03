@@ -70,9 +70,9 @@ body {
 }
 .hero-content {
    background: #36261e;
-  border-radius: 4px;
-  padding: 1.5em;
-  width: 100px;
+  border-radius: 100%;
+  padding: 2em;
+  width: 100%;
   text-align: center;
   animation: fadeInUp 0.75s ease;
 }
