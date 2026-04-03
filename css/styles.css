@@ -78,11 +78,11 @@ body {
   color: #d4a373;
 }
 .hero-content button {
-  margin-top: 0.5em;
-  background: #d4a373;
-  color: #231710;
+ margin-top: 1em;
+  background: #36261e;
+  color: #d4a373;
   border: none;
-  padding: 0.1em 0.5em;
+  padding: 0.1em 0.4em;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
