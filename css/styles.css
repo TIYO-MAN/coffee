@@ -105,13 +105,13 @@ h1, h2, h3 { color: #d4a373; }
   background: #36261e;
   border-radius: 4px;
   padding: 1.5em;
-  width: 50px;
+  width: 250px;
   text-align: center;
   animation: fadeInUp 0.75s ease;
 }
 .product img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .product h3 { color: #d4a373; }
 .product button {
