@@ -87,7 +87,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-.hero-content button:hover { background: #b68949; }
+.hero-content button:hover { background: #d4a373; }
 
 /* Sections */
 section { padding: 4em 2em; text-align: center; }
