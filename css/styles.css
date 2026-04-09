@@ -97,7 +97,9 @@ body {
 }
 .product img {
   width: 100%;
-  border-radius: 4px;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
 }
 .product h3 { color: #d4a373; }
 .product button {
