@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Coffee Shop</title>
+</head>
+<body>
+  <h1>Welcome to My Coffee Shop</h1>
+
+  <!-- Cart Section -->
+  <div id="cart"></div>
+
+  <!-- Order Form -->
+  <form id="orderForm">
+    <label>Name:</label>
+    <input type="text" name="name" required><br>
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    <label>Address:</label>
+    <textarea name="address" required></textarea><br>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <script>
+    // Example cart items
+    const cart = [
+      { item: "Ethiopian Arabica", qty: 2, price: 12 },
+      { item: "House Blend", qty: 1, price: 10 }
+    ];
+
+    // Display cart
+    const cartDiv = document.getElementById("cart");
+    cartDiv.innerHTML = "<h2>Your Cart</h2>" + cart.map(c => 
+      `${c.qty} x ${c.item} - $${c.price * c.qty}`
+    ).join("<br>");
+
+    // Handle form submission
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const order = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        address: formData.get("address"),
+        cart: cart
+      };
+      // Send order to backend (see step 2)
+      fetch("https://your-backend.com/order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(order)
+      }).then(res => alert("Order submitted!"));
+    });
+  </script>
+</body>
+</html>
