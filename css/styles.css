@@ -35,13 +35,13 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 90%;
   background: #231710; /* dark brown background */
-  padding: 1rem 1.3rem;
+  padding: 1rem 1rem;
 
   z-index: 100;
   display: flex;
-  justify-content: 250em
+  justify-content: 200em
   align-items: center;
 }
 
@@ -57,7 +57,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 
   padding: 1em;
 }
