@@ -114,15 +114,15 @@ body {
 }
 .product {
   background: #36261e;
-  border-radius: 2px;
-  padding: 1em;
-  width: 100px;
+  border-radius: 4px;
+  padding: 3em;
+  width: 300px;
   text-align: center;
   animation: fadeInUp 0.75s ease;
 }
 .product img {
   width: 100%;
-  max-width: 110px;
+  max-width: 220px;
   height: 200px;
   object-fit: cover;
 }
