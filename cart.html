@@ -1,55 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Coffee Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Package</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Welcome to My Coffee Shop</h1>
+  <section class="product">
+    <img src="coffee imge/product1.jpg" alt="Premium Arabica Coffee" class="product-img">
+    <div class="product-info">
+      <h1>Premium Coffee</h1>
+      <p>Freshly harvested Ethiopian Arabica beans, 500g package. Rich aroma, smooth taste, and authentic flavor.</p>
+      <p><strong>Price:</strong> 2,500.00</p>
+      
+      <!-- Order Form -->
+      <form id="orderForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        
+        <button type="submit">Order Now</button>
+      </form>
+    </div>
+  </section>
 
-  <!-- Cart Section -->
-  <div id="cart"></div>
+  <!-- Load EmailJS and external JS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/order.js"></script>
+</body>
+  <fotter>
+  <footer style="background-color:#2c2c2c; color:#f5f5f5; padding:40px 20px; text-align:center;">
+  <div style="margin-bottom:20px;">
+    <h3 style="margin:0; font-family:'Arial', sans-serif;">☕ Coffee Startup</h3>
+    <p style="margin:5px 0;">Brewing passion, one cup at a time.</p>
+  </div>
 
-  <!-- Order Form -->
-  <form id="orderForm">
-    <label>Name:</label>
-    <input type="text" name="name" required><br>
-    <label>Email:</label>
-    <input type="email" name="email" required><br>
-    <label>Address:</label>
-    <textarea name="address" required></textarea><br>
-    <button type="submit">Place Order</button>
-  </form>
+  <!-- Social Media Links -->
+  <div style="margin:20px 0;">
+    <a href="https://tiyo-man.github.io/coffee/contact.html" target="_blank" style="margin:0 10px; color:#f5f5f5; text-decoration:none;">Facebook</a>
+    <a href="https://tiyo-man.github.io/coffee/contact.html" target="_blank" style="margin:0 10px; color:#f5f5f5; text-decoration:none;">Instagram</a>
+    <a href="https://tiyo-man.github.io/coffee/contact.html target="_blank" style="margin:0 10px; color:#f5f5f5; text-decoration:none;">Twitter</a>
+    <a href="https://tiyo-man.github.io/coffee/contact.html" target="_blank" style="margin:0 10px; color:#f5f5f5; text-decoration:none;">LinkedIn</a>
+  </div>
 
-  <script>
-    // Example cart items
-    const cart = [
-      { item: "Ethiopian Arabica", qty: 2, price: 12 },
-      { item: "House Blend", qty: 1, price: 10 }
-    ];
+  <!-- Contact Info -->
+  <div style="margin:20px 0;">
+    <p style="margin:5px 0;">📍 Addis Ababa, Ethiopia</p>
+    <p style="margin:5px 0;">📞 +251 95 131 9737</p>
+    <p style="margin:5px 0;">✉️ hello@coffeestartup.com</p>
+  </div>
 
-    // Display cart
-    const cartDiv = document.getElementById("cart");
-    cartDiv.innerHTML = "<h2>Your Cart</h2>" + cart.map(c => 
-      `${c.qty} x ${c.item} - $${c.price * c.qty}`
-    ).join("<br>");
+  <div style="margin-top:20px; font-size:14px; color:#aaa;">
+  <p>  © 2026 Nione Coffee. All rights reserved.</p>
+  </div>
+</footer>
 
-    // Handle form submission
-    document.getElementById("orderForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      const order = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        address: formData.get("address"),
-        cart: cart
-      };
-      // Send order to backend (see step 2)
-      fetch("https://your-backend.com/order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(order)
-      }).then(res => alert("Order submitted!"));
-    });
-  </script>
+        <script src="js/main.js"></script>
+   
 </body>
 </html>
