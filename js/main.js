@@ -86,18 +86,14 @@ const coffeeChart = new Chart(ctx, {
     }
 });
 // Initialize EmailJS
-(function(){
-  emailjs.init("OWASGjHs6kzW_grqp"); // Replace with your EmailJS public key
-})();
+script.js > sendMail
 
-// Handle form submission
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+function sendMail()
+
+let parms = {
+name: document.getElementById("name").value,
+phone: document.getElementById("phone").value,
+Quantity: document.getElementById("Quantity").value,
+}
+emailjs.send("service_jp4gq5l","template_mg97won",parms).then(alert("Order details sent successfully!"));
   
-  emailjs.sendForm("service_hjw8acs", "template_fxldqw9", this)
-    .then(() => {
-      alert("Order details sent successfully!");
-    }, (err) => {
-      alert("Error: " + JSON.stringify(err));
-    });
-});
