@@ -13,20 +13,20 @@ body {
   top: 0;
   width: 100%;
   background: #231710; /* dark brown background */
-  padding: 1em 2em;
+  padding: 1rem 1.3rem;
 
   z-index: 100;
   display: flex;
-  justify-content: 250px
+  justify-content: 250em
   align-items: center;
 }
 
 /* Logo */
 .navbar .logo {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #d4a373; /* golden accent */
-  letter-spacing: 2px;
+  letter-spacing: 2em;
 }
 
 /* Menu */
