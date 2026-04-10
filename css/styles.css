@@ -116,14 +116,14 @@ body {
   background: #36261e;
   border-radius: 4px;
   padding: 1.5em;
-  width: 250px;
+  width: 100px;
   text-align: center;
   animation: fadeInUp 0.75s ease;
 }
 .product img {
   width: 100%;
-  max-width: 250px;
-  height: 200px;
+  max-width: 100px;
+  height: 150px;
   object-fit: cover;
 }
 .product h3 { color: #d4a373; }
