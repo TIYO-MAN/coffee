@@ -85,3 +85,19 @@ const coffeeChart = new Chart(ctx, {
         maintainAspectRatio: false // allows custom height
     }
 });
+// Initialize EmailJS
+(function(){
+  emailjs.init("OWASGjHs6kzW_grqp"); // Replace with your EmailJS public key
+})();
+
+// Handle form submission
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  emailjs.sendForm("service_hjw8acs", "template_fxldqw9", this)
+    .then(() => {
+      alert("Order details sent successfully!");
+    }, (err) => {
+      alert("Error: " + JSON.stringify(err));
+    });
+});
