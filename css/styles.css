@@ -93,7 +93,7 @@ body {
 }
 .hero-content button {
   margin-top: 1em;
-  background: #36261e;
+  background: black;
   color: #d4a373;
   border: none;
   padding: 0.1em 0.4em;
@@ -129,7 +129,7 @@ body {
 .product h3 { color: #d4a373; }
 .product button {
   margin-top: 1em;
-  background: #36261e;
+  background: black;
   color: #d4a373;
   border: none;
   padding: 0.1em 0.4em;
