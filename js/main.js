@@ -86,14 +86,15 @@ const coffeeChart = new Chart(ctx, {
     }
 });
 // Initialize EmailJS
-script.js > sendMail
 
-function sendMail()
+
+function sendMail(){
 
 let parms = {
 name: document.getElementById("name").value,
 phone: document.getElementById("phone").value,
 Quantity: document.getElementById("Quantity").value,
 }
-emailjs.send("service_jp4gq5l","template_mg97won",parms).then(alert("Order details sent successfully!"));
+emailjs.send("service_hjw8acs","template_p4t79df",parms).then(alert("Order details sent successfully!"));
   
+}
