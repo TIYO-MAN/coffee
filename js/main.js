@@ -1,3 +1,17 @@
+
+const container = document.querySelector('.scroll-container');
+const items = document.querySelectorAll('.item');
+
+container.addEventListener('scroll', () => {
+  const center = container.scrollLeft + container.offsetWidth / 2;
+  items.forEach(item => {
+    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+    const distance = Math.abs(center - itemCenter);
+    const scale = Math.max(1, 1.3 - distance / 400);
+    item.style.transform = `scale(${scale})`;
+  });
+});
+
 // Google Sign-in Example (replace YOUR_GOOGLE_CLIENT_ID)
 window.onGoogleSignIn = function(response) {
   const profile = response.credential; // Use JWT to get user info
