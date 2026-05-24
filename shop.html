@@ -4,38 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Shop</title>
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Our Coffee Shop</h1>
+  <header class="shop-header">
+    <h1>Order Fresh Coffee</h1>
+    <p>Choose your roast, size, and quantity</p>
+  </header>
 
-  <!-- Product List -->
-  <div class="product">
-    <h2>Ethiopian Arabica</h2>
-    <p>Price: $12 per kg</p>
-    <input type="number" id="arabicaQty" value="1" min="1">
-    <button onclick="addToCart('Ethiopian Arabica', 12, 'arabicaQty')">Add to Cart</button>
+  <!-- Roast Selection -->
+  <section class="roast-options">
+    <h2>Select Roast Level</h2>
+    <label><input type="radio" name="roast" value="Light"> Light – Sharp acidity</label><br>
+    <label><input type="radio" name="roast" value="Medium"> Medium – Balanced & sweet</label><br>
+    <label><input type="radio" name="roast" value="Dark"> Dark – Bold & smoky</label>
+  </section>
+
+  <!-- Size Selection -->
+  <section class="size-options">
+    <h2>Select Size</h2>
+    <select id="size">
+      <option value="250" data-price="740">250g – ETB 740</option>
+      <option value="500" data-price="1400">500g – ETB 1,400</option>
+      <option value="1000" data-price="2700">1000g – ETB 2,700</option>
+    </select>
+  </section>
+
+  <!-- Quantity -->
+  <section class="quantity">
+    <h2>Quantity</h2>
+    <button onclick="changeQty(-1)">−</button>
+    <span id="qty">0</span>
+    <button onclick="changeQty(1)">+</button>
+  </section>
+
+  <!-- Promo Code -->
+  <section class="promo">
+    <h2>Promo Code</h2>
+    <input type="text" id="promo" placeholder="Enter code">
+    <button onclick="applyPromo()">Apply</button>
+  </section>
+
+  <!-- Delivery -->
+  <section class="delivery">
+    <h2>Delivery Distance</h2>
+    <input type="number" id="distance" value="0" min="0"> km
+  </section>
+
+  <!-- Cart -->
+  <section class="cart">
+    <h2>Cart</h2>
+    <button onclick="addToCart()">Add to Cart 🛒</button>
+    <div id="cart"></div>
+    <h3 id="total"></h3>
+  </section>
+
+  <footer>
+    <div style="margin-top:20px; font-size:14px; color:#aaa;">
+  <p>  © 2026 Nione Coffee. All rights reserved.</p>
   </div>
+</footer>
+  </footer>
 
-  <div class="product">
-    <h2>House Blend</h2>
-    <p>Price: $10 per kg</p>
-    <input type="number" id="blendQty" value="1" min="1">
-    <button onclick="addToCart('House Blend', 10, 'blendQty')">Add to Cart</button>
-  </div>
-
-  <!-- Delivery Input -->
-  <div class="delivery">
-    <label>Delivery Distance (km):</label>
-    <input type="number" id="distance" value="0" min="0">
-    <button onclick="calculateTotal()">Calculate Total</button>
-  </div>
-
-  <!-- Cart Display -->
-  <h2>Your Cart</h2>
-  <div id="cart"></div>
-  <h3 id="total"></h3>
-
-  <script src="js/main.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
