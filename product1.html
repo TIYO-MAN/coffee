@@ -36,7 +36,7 @@
 <p>.</p>
 <p>.</p>     
   
- <section class="shop-hero">
+
 <body>
   <h1>Welcome to My Coffee Shop</h1>
    
@@ -61,39 +61,7 @@
     <button type="submit" onclick="emailjs.send()" ><h2>Place Order</h2></button>
   </form>
  </div>
- </section>
-    // Example cart items
-    const cart = [
-      { item: "product1", qty: 2, price: 2500 },
-      { item: "House Blend", qty: 1, price: 10 }
-    ];
-
-    // Display cart
-    const cartDiv = document.getElementById("cart");
-    cartDiv.innerHTML = "<h2>Your Cart</h2>" + cart.map(c => 
-      `${c.qty} x ${c.item} - $${c.price * c.qty}`
-    ).join("<br>");
-
-    // Handle form submission
-    document.getElementById("orderForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      const order = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        address: formData.get("address"),
-        cart: cart
-      };
-      // Send order to backend (see step 2)
-      fetch("https://github.com/TIYO-MAN/coffee/edit/main/product1.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(order)
-      }).then(res => alert("Order submitted!"));
-    });
-  </script>
-</body>
- </section>
+    
 
 
   <fotter>
