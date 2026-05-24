@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <head>
-  <title>Naion</title>
+  <title>Nione</title>
   <!-- Add the favicon link -->
   <link rel="icon" href="coffee%20imge/photo_2026-03-15_19-44-44.jpg" type="image/x-icon">
 </head>
@@ -12,16 +12,15 @@
   <meta charset="UTF-8">
 
  
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="css/styles.css">
  
 </head>
 <body>
-   
-
+ 
   
  <header class="navbar">
   <div class="logo">
-  <img src="coffee%20imge/photo_2026-03-15_18-00-04.jpg"  style="height:40px;" >
+  <img src="coffee%20imge/photo_2026-03-15_18-00-04.jpg"  style="height:50px; " >
 </div>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -31,66 +30,105 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
-<body>
-  <header class="shop-header">
-    <h1>Order Fresh Coffee</h1>
-    <p>Choose your roast, size, and quantity</p>
-  </header>
 
-  <!-- Roast Selection -->
-  <section class="roast-options">
-    <h2>Select Roast Level</h2>
-    <label><input type="radio" name="roast" value="Light"> Light – Sharp acidity</label><br>
-    <label><input type="radio" name="roast" value="Medium"> Medium – Balanced & sweet</label><br>
-    <label><input type="radio" name="roast" value="Dark"> Dark – Bold & smoky</label>
+  <!-- Hero Banner -->
+ <p>.</p>
+ <p>.</p>
+ 
+ 
+  <section class="shop-hero">
+    <div class="hero-content">
+      <h1>Our Coffee & Accessories</h1>
+      <p>Finest Ethiopian coffee, mugs, spoons, and more.</p>
+    </div>
   </section>
 
-  <!-- Size Selection -->
-  <section class="size-options">
-    <h2>Select Size</h2>
-    <select id="size">
-      <option value="250" data-price="740">250g – ETB 740</option>
-      <option value="500" data-price="1400">500g – ETB 1,400</option>
-      <option value="1000" data-price="2700">1000g – ETB 2,700</option>
-    </select>
-  </section>
+  <!-- Product Grid -->
+  <section class="product-grid">
+    
+    <div class="product">
+      <img src="coffee imge/product1.jpg" alt="Coffee">
+      <h3>Specialty product</h3>
+      <p>Unique flavors from Ethiopia’s finest farms.</p>
+    <div class="hero-content">
+     <button onclick="document.location='https://tiyo-man.github.io/coffee/product1.html'"><h2><B>Order</B></h2></button>
+     </div>
+    </div>
 
-  <!-- Quantity -->
-  <section class="quantity">
-    <h2>Quantity</h2>
-    <button onclick="changeQty(-1)">−</button>
-    <span id="qty">0</span>
-    <button onclick="changeQty(1)">+</button>
-  </section>
+     <div class="product">
+      <img src="coffee imge/product2.jpg" alt="Coffee">
+      <h3>speciality coffee</h3>
+      <p>Unique flavors from Ethiopia’s finest farms.</p>
+       <div class="hero-content">
+     <button><h2><B>Order</B></h2></button>
+     </div>
+    </div>
+    
+    <div class="product">
+      <img src="coffee imge/spoon 1.jpg" alt="spoon">
+      <h3> coffee spoons</h3>
+      <p> stainless steel, vibrant, and full-bodied.</p>
+      <div class="hero-content">
+     <button><h2><B>Order</B></h2></button>
+     </div>
+    </div>
 
-  <!-- Promo Code -->
-  <section class="promo">
-    <h2>Promo Code</h2>
-    <input type="text" id="promo" placeholder="Enter code">
-    <button onclick="applyPromo()">Apply</button>
-  </section>
+    
+  
+     <div class="product">
+      <img src="coffee imge/black spoon.webp" alt="spoon">
+      <h3>Coffee spoon</h3>
+      <p>Black , vibrent</p>
+     <div class="hero-content">
+     <button><h2><B>Order</B></h2></button>
+     </div>
+    </div>
 
-  <!-- Delivery -->
-  <section class="delivery">
-    <h2>Delivery Distance</h2>
-    <input type="number" id="distance" value="0" min="0"> km
-  </section>
+    <div class="product">
+      <img src="coffee imge/t-shert.webp" alt="t-shert">
+      <h3>T-shert</h3>
+      <p>custom made t shirts</p>
+     <div class="hero-content">
+     <button><h2><B>Order</B></h2></button>
+     </div>
+    </div>
+   
 
-  <!-- Cart -->
-  <section class="cart">
-    <h2>Cart</h2>
-    <button onclick="addToCart()">Add to Cart 🛒</button>
-    <div id="cart"></div>
-    <h3 id="total"></h3>
-  </section>
-
-  <footer>
-    <div style="margin-top:20px; font-size:14px; color:#aaa;">
-  <p>  © 2026 Nione Coffee. All rights reserved.</p>
+<section class="shop-carousel">
+  <h2> Coffee Collection</h2>
+  <div class="scroll-container">
+    <div class="item"><img src="coffee imge/black spoon.webp" alt="Espresso Roast"><h3>Espresso Roast</h3></div>
+    <div class="item"><img src="coffee imge/product2.jpg" alt="Filter Roast"><h3>Filter Roast</h3></div>
+    <div class="item"><img src="coffee imge/spoon 1.jpg" alt="Arabica Blend"><h3>Arabica Blend</h3></div>
+    <div class="item"><img src="coffee imge/t-shert.webp" alt="Cappuccino"><h3>Cappuccino</h3></div>
   </div>
-</footer>
-  </footer>
 
-   <script src="js/main.js"></script>
+  
+</head>
+<body>
+  <section class="shop-carousel">
+    <h2>Our Coffee Collection</h2>
+    <div class="scroll-container">
+      <div class="item"><img src="coffee imge/black spoon.webp" alt="Espresso Roast"><h3>Espresso Roast</h3></div>
+      <div class="item"><img src="coffee imge/spoon 1.jpg" alt="Filter Roast"><h3>Filter Roast</h3></div>
+      <div class="item"><img src="coffee imge/product2.jpg" alt="Arabica Blend"><h3>Arabica Blend</h3></div>
+      <div class="item"><img src="coffee imge/t-shert.webp" alt="Cappuccino"><h3>Cappuccino</h3></div>
+    </div>
+  </section>
+
+  <script>
+    const container = document.querySelector('.scroll-container');
+    const items = document.querySelectorAll('.item');
+
+    container.addEventListener('scroll', () => {
+      const center = container.scrollLeft + container.offsetWidth / 2;
+      items.forEach(item => {
+        const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+        const distance = Math.abs(center - itemCenter);
+        const scale = Math.max(1, 1.3 - distance / 400);
+        item.style.transform = `scale(${scale})`;
+      });
+    });
+  </script>
 </body>
 </html>
