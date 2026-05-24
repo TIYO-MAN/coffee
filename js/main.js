@@ -1,3 +1,28 @@
+let cart = [];
+const deliveryRate = 100; // $0.5 per km
+
+function addToCart(productName, price, qtyId) {
+  const qty = parseInt(document.getElementById(qtyId).value);
+  cart.push({ product: productName, price: price, qty: qty });
+  displayCart();
+}
+
+function displayCart() {
+  const cartDiv = document.getElementById("cart");
+  cartDiv.innerHTML = cart.map(
+    item => `${item.product} - ${item.qty} x $${item.price} = $${item.qty * item.price}`
+  ).join("<br>");
+}
+
+function calculateTotal() {
+  const distance = parseFloat(document.getElementById("distance").value);
+  const productTotal = cart.reduce((sum, item) => sum + item.qty * item.price, 0);
+  const deliveryCost = distance * deliveryRate;
+  const grandTotal = productTotal + deliveryCost;
+
+  document.getElementById("total").innerText =
+    `Products: $${productTotal.toFixed(2)} + Delivery: $${deliveryCost.toFixed(2)} = Total: $${grandTotal.toFixed(2)}`;
+}
 
 const container = document.querySelector('.scroll-container');
 const items = document.querySelectorAll('.item');
