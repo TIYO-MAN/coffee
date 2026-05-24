@@ -8,54 +8,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Transparent Navbar -->
+  <nav class="navbar">
+    <div class="logo">Coffee House</div>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#cafes">Cafés</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
+    <button id="mode-toggle">🌙</button>
+  </nav>
+
   <!-- Hero Section -->
   <header class="hero">
     <div class="hero-text">
       <h1>Fresh Roasted Coffee</h1>
       <p>From the Farm to the Cup</p>
-      <a href="#shop" class="btn">Order Now</a>
+      <a href="#shop" class="btn bike-btn">Visit Shop 🚲</a>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>Born in Ethiopia. Crafted for the World</h2>
-    <p>Our coffee heritage spans decades, serving embassies, airlines, and coffee lovers worldwide.</p>
-  </section>
-
-  <!-- Cafés Section -->
-  <section class="cafes">
-    <h2>Our Cafés</h2>
-    <div class="cafe-grid">
-      <div class="cafe-card">Skylight Café</div>
-      <div class="cafe-card">Kazanchis Café</div>
-      <div class="cafe-card">Entoto Café</div>
-      <div class="cafe-card">Andinet Café</div>
+  <!-- Big Image + Description -->
+  <section class="feature">
+    <img src="coffee1.jpg" alt="Coffee beans">
+    <div class="desc">
+      <h2>Born in Ethiopia</h2>
+      <p>Crafted for the world with heritage and excellence.</p>
     </div>
   </section>
 
-  <!-- Roasting Section -->
-  <section class="roasting">
-    <h2>Roasting Excellence</h2>
-    <p>Crafted with precision using world-class roasting equipment.</p>
-    <a href="#roast" class="btn">Choose Your Roast</a>
+  <section class="feature">
+    <img src="coffee2.jpg" alt="Roastery">
+    <div class="desc">
+      <h2>Roasting Excellence</h2>
+      <p>Precision roasting with world-class equipment.</p>
+    </div>
   </section>
 
-  <!-- Contact & Shop -->
+  <!-- Footer -->
   <footer>
-    <div class="contact">
-      <p>Email: info@coffeehouse.com</p>
-      <p>Phone: +251-000-000-000</p>
-      <a href="#shop" class="btn">Visit Shop</a>
-    </div>
-    <nav class="footer-nav">
-      <a href="#">Home</a>
-      <a href="#">Cafés</a>
-      <a href="#">About</a>
-      <a href="#">Menu</a>
-      <a href="#">Shop</a>
-      <a href="#">Privacy Policy</a>
-    </nav>
+    <p>Email: info@coffeehouse.com | Phone: +251-000-000-000</p>
+    <p>&copy; 2026 Coffee House</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
